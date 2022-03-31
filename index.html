@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+    <div class="main-body">
+
+        <nav id="navbar">
+            <header>Table of Contents</header>
+            <a href="#Java_Programming_Language" class="nav-link">Java Programming Language</a>
+            <a href="#Java_Basic_Syntax" class="nav-link">Java Basic Syntax</a>
+            <a href="#Data_types_in_Java" class="nav-link">Data Types in Java</a>
+            <a href="#Variables_in_Java" class="nav-link">Variables in Java</a>
+            <a href="#OOP_Concepts:_Inheritance" class="nav-link">OOP Concepts: Inheritance</a>
+            <a href="#OOP_Concepts:_Encapsulation" class="nav-link">OOP Concepts: Encapsulation</a>
+            <a href="#OOP_Concepts:_Polymorphism" class="nav-link">OOP Concepts: Polymorphism</a>
+            <a href="#OOP_Concepts:_Abstraction" class="nav-link">OOP Concepts: Abstraction</a>
+        </nav>
+
+        <main id="main-doc">
+
+            <section class="main-section" id="Java_Programming_Language">
+                <header>Java Programming Language</header>
+                <p>Java is one of the most popular and widely used programming languages.</p>
+                <ul>
+                    <li>Java has been one of the most popular programming languages for many years.</li>
+                    <li>Java is Object Oriented. However, it is not considered as pure object-oriented as it provides
+                        support for primitive data types (like int, char, etc)</li>
+                    <li>The Java codes are first compiled into byte code (machine-independent code). Then the byte code
+                        runs on <b>Java Virtual Machine (JVM)</b> regardless of the underlying architecture.</li>
+                    <li>Java syntax is similar to C/C++. But Java does not provide low-level programming functionalities
+                        like pointers. Also, Java codes are always written in the form of classes and objects.</li>
+                    <li>Java is used in all kinds of applications like Mobile Applications (Android is Java-based),
+                        desktop applications, web applications, client-server applications, enterprise applications, and
+                        many more.</li>
+                    <li>When compared with C++, Java codes are generally more maintainable because Java does not allow
+                        many things which may lead to bad/inefficient programming if used incorrectly. For example,
+                        non-primitives are always references in Java. So we cannot pass large objects (like we can do in
+                        C++) to functions, we always pass references in Java. One more example, since there are no
+                        pointers, bad memory access is also not possible.</li>
+                    <li>When compared with Python, Java kind of fits between C++ and Python. The programs are written in
+                        Java typically run faster than corresponding Python programs and slower than C++. Like C++, Java
+                        does static type checking, but Python does not.
+                    </li>
+                </ul>
+                <p><b>Simple Hello World Program:</b></p>
+                <code>
+                    public class Main { <br>
+                    public static void main(String args[]) { <br>
+                    System.out.println("Hello World"); <br>
+                    } <br>
+                    } <br>
+                </code>
+            </section>
+
+            <section class="main-section" id="Java_Basic_Syntax">
+                <header>Java Basic Syntax</header>
+                <p>A Java program is a collection of objects, and these objects communicate through method calls to each
+                    other to work together. Here is a brief discussion on the Classes and Objects, Method, Instance
+                    variables, syntax, and semantics of Java.</p>
+                <p><b>Basic terminologies in Java</b></p>
+                <ol>
+                    <li><b>Class:</b> The class is a blueprint (plan) of the instance of a class (object). It can be
+                        defined as a template which describes the data and behaviour associated with its instance.</li>
+                    <li><b>Object:</b> The object is an instance of a class. It is an entity which has behaviour and
+                        state.</li>
+                    <li><b>Method:</b> The behaviour of an object is the method.</li>
+                    <li><b>Instance variables:</b> Every object has its own unique set of instance variables. The state
+                        of an object is generally created by the values that are assigned to these instance variables.
+                    </li>
+                </ol>
+                <code>
+                    public class Main { <br>
+                    public static void main (String[] args) { <br>
+                    System.out.println("GFG!"); <br>
+                    } <br>
+                    } <br>
+                </code>
+
+                <p><b>The Basic Syntax:</b></p>
+                <ol>
+                    <li><b>Comments in Java:</b> There are three types of comments in Java.
+                        <ul>
+                            <li>Single line comment</li>
+                            <code>// System.out.println("GFG!");</code>
+                            <li>Multi-line comment</li>
+                            <code>/* <br>
+                                System.out.println("GFG!"); <br>
+                                System.out.println("Alice!"); <br>
+                                */ <br>
+                            </code>
+                            <li>Documentation comment</li>
+                            <code>/** documentation */</code>
+                        </ul>
+                    </li>
+                    <li><b>Source File Name.</b> The name of a source file should exactly match the public class name
+                        with the extension of .java. The name of the file can be a different name if it does not have
+                        any public class. Assume you have a public class GFG.</li>
+                    <li><b>Case Sensitivity.</b> Java is a case-sensitive language, which means that the identifiers AB,
+                        Ab, aB, and ab are different in Java.</li>
+                    <li><b>Class Names</b>
+                        <ul>
+                            <li>The first letter of the class should be in Uppercase (lowercase is allowed, but not
+                                discouraged).</li>
+                            <li>If several words are used to form the name of the class, each inner word’s first letter
+                                should be in Uppercase. Underscores are allowed, but not recommended. Also allowed are
+                                numbers and currency symbols, although the latter are also discouraged because the are
+                                used for a special purpose (for inner and anonymous classes).</li>
+                        </ul>
+                    </li>
+                    <li><b>public static void main(String [] args).</b> The method main() is the main entry point into a
+                        Java program; this is where the processing starts. Also allowed is the signature public static
+                        void main(String… args).</li>
+                    <li><b>Method Names</b>
+                        <ul>
+                            <li>All the method names should start with a lowercase letter.</li>
+                            <li>If several words are used to form the name of the method, then each first letter of the
+                                inner word should be in Uppercase. Underscores are allowed, but not recommended. Also
+                                allowed are digits and currency symbols.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="main-section" id="Data_types_in_Java">
+                <header>Data types in Java</header>
+                <p>Java is <b>statically typed and also a strongly typed language</b> because, in Java, each type of
+                    data (such as integer, character, hexadecimal, packed decimal, and so forth) is predefined as part
+                    of the programming language and all constants or variables defined for a given program must be
+                    described with one of the data types.</p>
+                <p><b>Java has two categories of data:</b> </p>
+                <ul>
+                    <li><b>Primitive Data Type:</b> such as boolean, char, int, short, byte, long, float, and double
+                    </li>
+                    <li><b>Non-Primitive Data Type or Object Data type:</b> such as String, Array, etc.</li>
+                </ul>
+
+                <h3>Types of Primitive Datatypes</h3>
+                <p>There are <b>8 primitive data types.</b> These are:</p>
+                <ol>
+                    <li><b>boolean:</b> boolean data type represents only one bit of information either true or false,
+                        but the size of the boolean data type is virtual machine-dependent. Values of type boolean are
+                        not converted implicitly or explicitly (with casts) to any other type. But the programmer can
+                        easily write conversion code.</li>
+                    <li><b>byte:</b> The byte data type is an 8-bit signed two’s complement integer. The byte data type
+                        is useful for saving memory in large arrays.</li>
+                    <li><b>short:</b> The short data type is a 16-bit signed two’s complement integer. Similar to byte,
+                        use a short to save memory in large arrays, in situations where the memory savings actually
+                        matters.</li>
+                    <li><b>long:</b> The long data type is a 64-bit two’s complement integer.</li>
+                    <li><b>float:</b> The float data type is a single-precision 32-bit IEEE 754 floating-point. Use a
+                        float (instead of double) if you need to save memory in large arrays of floating-point numbers.
+                    </li>
+                    <li><b>double:</b> The double data type is a double-precision 64-bit IEEE 754 floating-point. For
+                        decimal values, this data type is generally the default choice.</li>
+                    <li><b>char:</b> The char data type is a single 16-bit Unicode character.</li>
+                </ol>
+
+                <h3>Non-Primitive Data Type or Reference Data Types</h3>
+                <p>The <b>Reference Data Types</b> will contain a memory address of variable values because the
+                    reference types won’t store the variable value directly in memory. They are strings, objects,
+                    arrays, etc.</p>
+                <ol>
+                    <li><b>Class:</b> A class is a user-defined blueprint or prototype from which objects are created.
+                        It represents the set of properties or methods that are common to all objects of one type. In
+                        general, class declarations can include these components, in order: </li>
+                    <li><b>Object:</b> It is a basic unit of Object-Oriented Programming and represents real-life
+                        entities. A typical Java program creates many objects, which as you know, interact by invoking
+                        methods. </li>
+                    <li><b>Interface:</b> Like a class, an interface can have methods and variables, but the methods
+                        declared in an interface are by default abstract (only method signature, nobody). </li>
+                    <li><b>Array:</b> An array is a group of like-typed variables that are referred to by a common name.
+                        Arrays in Java work differently than they do in C/C++.</li>
+                </ol>
+            </section>
+
+
+            <section class="main-section" id="Variables_in_Java">
+                <header>Variables in Java</header>
+                <p><b>Variable in Java</b> is a data container that saves the data values during Java program execution.
+                    Every variable is assigned a data type that designates the type and quantity of value it can hold.
+                    Variable is a memory location name of the data.</p>
+                <p>A variable is a name given to a memory location. It is the basic unit of storage in a program.</p>
+                <ol>
+                    <li>The value stored in a variable can be changed during program execution.</li>
+                    <li>A variable is only a name given to a memory location, all the operations done on the variable
+                        effects that memory location.</li>
+                    <li>In Java, all the variables must be declared before use.</li>
+                </ol>
+                <p><b>Types of Variables in Java</b></p>
+                <p>Now let us discuss different types of variables which are listed as follows:</p>
+                <ol>
+                    <li>Local Variables</li>
+                    <li>Instance Variables</li>
+                    <li>Static Variables</li>
+                </ol>
+            </section>
+
+
+            <section class="main-section" id="OOP_Concepts:_Inheritance">
+                <header>OOP Concepts: Inheritance</header>
+                <p>Inheritance is an important pillar of OOP(Object-Oriented Programming). It is the mechanism in java
+                    by which one class is allowed to inherit the features(fields and methods) of another class.</p>
+                <p><b>Important terminology:</b></p>
+                <ul>
+                    <li><b>Super Class:</b> The class whose features are inherited is known as superclass(or a base
+                        class or a parent class).</li>
+                    <li><b>Sub Class:</b> The class that inherits the other class is known as a subclass(or a derived
+                        class, extended class, or child class). The subclass can add its own fields and methods in
+                        addition to the superclass fields and methods.</li>
+                    <li><b>Reusability:</b> Inheritance supports the concept of “reusability”, i.e. when we want to
+                        create a new class and there is already a class that includes some of the code that we want, we
+                        can derive our new class from the existing class. By doing this, we are reusing the fields and
+                        methods of the existing class.</li>
+                </ul>
+
+                <p><b>Types of Inheritance in Java</b></p>
+                <ol>
+                    <li><b>Single Inheritance:</b> In single inheritance, subclasses inherit the features of one
+                        superclass. In the image below, class A serves as a base class for the derived class B.</li>
+                    <li><b>Multilevel Inheritance:</b> In Multilevel Inheritance, a derived class will be inheriting a
+                        base class and as well as the derived class also act as the base class to other class. In the
+                        below image, class A serves as a base class for the derived class B, which in turn serves as a
+                        base class for the derived class C. In Java, a class cannot directly access the grandparent’s
+                        members.</li>
+                    <li><b>Hierarchical Inheritance:</b> In Hierarchical Inheritance, one class serves as a superclass
+                        (base class) for more than one subclass. In the below image, class A serves as a base class for
+                        the derived class B, C and D.</li>
+                    <li><b>Multiple Inheritance (Through Interfaces):</b> In Multiple inheritances, one class can have
+                        more than one superclass and inherit features from all parent classes. Please note that Java
+                        does not support multiple inheritances with classes. In java, we can achieve multiple
+                        inheritances only through Interfaces. In the image below, Class C is derived from interface A
+                        and B.</li>
+                </ol>
+            </section>
+
+
+            <section class="main-section" id="OOP_Concepts:_Encapsulation">
+                <header>OOP Concepts: Encapsulation</header>
+                <p>Encapsulation is defined as the wrapping up of data under a single unit. It is the mechanism that
+                    binds together code and the data it manipulates. Another way to think about encapsulation is, it is
+                    a protective shield that prevents the data from being accessed by the code outside this shield.</p>
+                <p><b>Advantages of Encapsulation:</b></p>
+                <ul>
+                    <li><b>Data Hiding:</b> The user will have no idea about the inner implementation of the class. It
+                        will not be visible to the user how the class is storing values in the variables. The user will
+                        only know that we are passing the values to a setter method and variables are getting
+                        initialized with that value.</li>
+                    <li><b>Increased Flexibility:</b> We can make the variables of the class read-only or write-only
+                        depending on our requirement. If we wish to make the variables read-only then we have to omit
+                        the setter methods like setName(), setAge(), etc. from the above program or if we wish to make
+                        the variables as write-only then we have to omit the get methods like getName(), getAge(), etc.
+                        from the above program</li>
+                    <li><b>Reusability:</b> Encapsulation also improves the re-usability and is easy to change with new
+                        requirements.</li>
+                    <li><b>Testing code is easy:</b> Encapsulated code is easy to test for unit testing.</li>
+                </ul>
+            </section>
+
+
+            <section class="main-section" id="OOP_Concepts:_Polymorphism">
+                <header>OOP Concepts: Polymorphism</header>
+                <p>The word polymorphism means having many forms. In simple words, we can define polymorphism as the
+                    ability of a message to be displayed in more than one form.</p>
+                <p><b>Types of polymorphism</b></p>
+                <ul>
+                    <li>Compile-time Polymorphism</li>
+                    <li>Runtime Polymorphism</li>
+                </ul>
+            </section>
+
+
+            <section class="main-section" id="OOP_Concepts:_Abstraction">
+                <header>OOP Concepts: Abstraction</header>
+                <p>Data Abstraction is the property by virtue of which only the essential details are displayed to the
+                    user. The trivial or the non-essentials units are not displayed to the user. Ex: A car is viewed as
+                    a car rather than its individual components.</p>
+                <p>In java, abstraction is achieved by interfaces and abstract classes. We can achieve 100% abstraction
+                    using interfaces.</p>
+                <p><b>Abstract classes and Abstract methods:</b></p>
+                <ol>
+                    <li>An abstract class is a class that is declared with an <em>abstract keyword</em>.</li>
+                    <li>An abstract method is a method that is declared without implementation.</li>
+                    <li>An abstract class may or may not have all abstract methods. Some of them can be concrete methods
+                    </li>
+                    <li>A method defined abstract must always be redefined in the subclass, thus making
+                        <em>overriding</em> compulsory OR either make the subclass itself abstract.</li>
+                    <li>Any class that contains one or more abstract methods must also be declared with an abstract
+                        keyword.</li>
+                    <li>There can be no object of an abstract class. That is, an abstract class can not be directly
+                        instantiated with the <em>new operator</em>.</li>
+                    <li>An abstract class can have parameterized constructors and the default constructor is always
+                        present in an abstract class.</li>
+                </ol>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
